@@ -1,0 +1,328 @@
+
+ /*
+1. Header
+2. Buttons in the right
+3.Form w/ buttons
+4. footer 
+ */
+
+
+
+/* colors */
+:root{
+    --button-green: #1DB954;
+    --button-blue: #3b5998;
+    --button-blue-hover: #3a61b3;; 
+    --button-black-hover:#333333;
+    --button-hover-last: #616467;
+    --button-green-hover:#1ED760;
+
+}
+
+/* resests */ 
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+text-decoration: none;
+}
+body, html {
+    background-color: #ffffff;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/* check */
+body {  
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color:#222326 ;
+
+}
+div{
+    display: block;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+}
+
+/*columns */   
+.col {
+    width: 100%;
+     /* checks */
+    position: relative;
+    min-height: 1px;
+    padding: 0 15px;
+   
+}
+
+.h5 {
+   font-weight: 900;
+   color: inherit;
+   margin-top: 12px;
+   margin-bottom: 12px;
+   
+}
+/* so everything is display as column */
+
+
+/*header*/ 
+header {
+background-color: inherit;
+padding: 12px 0 ;
+border-bottom: 1px solid #d9dadc;
+text-align: center;
+margin-bottom: 30px;
+
+}
+font-face {
+    font-family: Gotham-regular;
+    src: url(/fonts/GothamMedium.ttf);
+} 
+
+@font-face {
+    font-family: Gotham;
+    src: url(/fonts/Gotham-Bold.otf);
+}
+ header .logo{
+    font-size: 1.7rem;
+    font-family: Gotham;
+    
+}
+
+
+/* content */
+    
+    /*containers */
+.container-fluid {    /* align the box thats gonna hold everything */
+    padding: 0 15px;
+    margin: 0 15px;
+    line-height: 24px;
+    
+}
+
+
+.content {  /* container for the info inside of the primary container */
+        margin: 0 auto;
+        max-width: 450px; /* buttons */ 
+    }
+
+/* buttons */
+
+.btn-facebook, .btn-apple {
+    padding-top: 14px;
+    color: #fff;
+    
+}
+.btn-facebook {  
+    background-color: var(--button-blue);
+    margin-top: 6px;
+}
+
+.btn-apple {
+background-color:#000 ;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn {
+    border-radius: 500px;
+    line-height: 0.9;
+    padding: 16px 14px 18px;
+    font-size: 15.8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0;
+    border-width: 0;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    
+    
+}
+
+/* o divider */
+.row
+{
+ margin: 10px -13px;
+
+}
+
+.divider {
+    text-align: center;
+    display: block;
+    border-top: 1px solid #d9dadc;
+    line-height: 1px;
+    margin: 25px 0;
+    position: relative;
+}
+.divider .divider-title {
+
+    background: #fff;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    text-transform: lowercase;
+    font-size: 18px;
+}
+
+
+.xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding: 0 15px;
+}
+
+/* form */
+
+.email{
+    margin-bottom: 14px;
+}
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #fff;
+    border: 1px solid #d9dadc;
+    border-radius: 0;
+    color: #222326;
+    display: block;
+    font-size: 15.5px;
+    box-shadow: none;
+}
+
+.password {
+    margin-bottom: 16px;
+}
+.check {
+    margin-right:  5px;
+
+}
+.text {
+    color: #b1b3b9;
+    font-size: 16px;
+    cursor: pointer;
+}
+.checkbox {
+    padding-bottom: 20px;
+}
+
+.btn-green {
+    background-color: var(--button-green);
+    line-height: .8;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+button {
+    cursor: pointer;
+}
+.btn-default {
+ color: #616467;
+ box-shadow: inset 0 0 0 2px #616467;  
+ background-color: #fff;
+ border-color: #ccc;
+ font-weight: bold;
+ margin-top: .9rem;
+ margin-bottom: 20px;
+ 
+}
+
+.reminder {
+    color: var(--button-green);
+    
+}
+
+.n-scope{
+    margin-top: 2.5rem;
+   
+}
+
+.sx{
+    margin-bottom: 2rem;
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7em;
+    line-height: 23px;
+    margin-top: 0;
+    color: rgb(190, 187, 187);
+}
+
+
+/* hoverr */
+.btn-facebook:hover {
+    background-color: var(--button-blue-hover);
+
+}
+.btn-apple:hover {
+    background-color: var(--button-black-hover);
+}
+
+.btn-green:hover {
+    background-color: var(--button-green-hover);
+}
+
+.reminder:hover {
+    color: var(--button-green-hover);
+}
+
+.btn-default:hover {
+    color: white;
+    background-color:#616467;
+}
+
+/* smooth effect */
+.btn{
+    transition-property: background, background-color, border-color,color, box-shadow;
+    transition-duration: .3s;
+}
+
+/* form details */
+input[type=text]:focus{
+    outline:none;
+    border: 1.3px solid #616467;
+}
+
+
+.texto {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media screen  and (min-width: 770px){
+    header {
+        
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    header .logo{
+        font-size:2rem;
+    }
+
+    .col-ms6{
+        width: 50%;
+        font-size: 15px;
+        margin-top: 3px;
+       
+    }
+    .checkbox{
+        width: 50%;
+        float: left;
+    }
+
+    .checkbox  {
+        margin-top: .9rem;
+    }
+}
